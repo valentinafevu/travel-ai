@@ -1,0 +1,429 @@
+{
+  "vector_dimensions": [
+    "lujo",
+    "economico",
+    "grupo",
+    "aventura",
+    "playa"
+  ],
+  "users": [
+    {
+      "id": "camila",
+      "name": "Camila",
+      "profile": "Viajes de lujo",
+      "description": "Le gustan los hoteles de alta gama y las experiencias privadas.",
+      "history": [
+        "Compró un paquete de lujo",
+        "Buscó hoteles caros de cinco estrellas"
+      ],
+      "party_size": 2,
+      "max_price_per_person_usd": 3000,
+      "vector": {
+        "lujo": 1.0,
+        "economico": 0.0,
+        "grupo": 0.0,
+        "aventura": 0.1,
+        "playa": 0.5
+      },
+      "origin": "MDE"
+    },
+    {
+      "id": "diego",
+      "name": "Diego",
+      "profile": "Grupo económico",
+      "description": "Planea viajar con ocho personas y quiere cuidar el presupuesto.",
+      "history": [
+        "Buscó paquetes para 8 personas",
+        "Filtró por precios bajos"
+      ],
+      "party_size": 8,
+      "max_price_per_person_usd": 650,
+      "vector": {
+        "lujo": 0.0,
+        "economico": 1.0,
+        "grupo": 1.0,
+        "aventura": 0.1,
+        "playa": 0.5
+      },
+      "origin": "MDE"
+    },
+    {
+      "id": "sofia",
+      "name": "Sofía",
+      "profile": "Aventura",
+      "description": "Busca actividades al aire libre sin gastar demasiado.",
+      "history": [
+        "Buscó senderismo",
+        "Vio paquetes de aventura"
+      ],
+      "party_size": 2,
+      "max_price_per_person_usd": 1200,
+      "vector": {
+        "lujo": 0.0,
+        "economico": 0.5,
+        "grupo": 0.0,
+        "aventura": 1.0,
+        "playa": 0.2
+      },
+      "origin": "MDE"
+    }
+  ],
+  "accommodations": [
+    {
+      "id": "cartagena_premium",
+      "name": "Cartagena premium",
+      "destination": "Cartagena, Colombia",
+      "nights": 4,
+      "description": "Hotel frente al mar, habitaciones de alta gama y acceso al spa.",
+      "price_per_person_usd": "1440",
+      "max_people": 4,
+      "vector": {
+        "lujo": 1.0,
+        "economico": 0.0,
+        "grupo": 0.0,
+        "aventura": 0.0,
+        "playa": 0.8
+      },
+      "hotel": "Casa del Mar Boutique",
+      "airport": "CTG",
+      "day_offset": 0
+    },
+    {
+      "id": "bogota_gourmet",
+      "name": "Bogotá gourmet",
+      "destination": "Bogotá, Colombia",
+      "nights": 3,
+      "description": "Hotel boutique para descubrir la gastronomía de la capital.",
+      "price_per_person_usd": "1080",
+      "max_people": 4,
+      "vector": {
+        "lujo": 1.0,
+        "economico": 0.0,
+        "grupo": 0.0,
+        "aventura": 0.1,
+        "playa": 0.0
+      },
+      "hotel": "Hotel Sabores de la Capital",
+      "airport": "BOG",
+      "day_offset": 7
+    },
+    {
+      "id": "santa_marta_grupo",
+      "name": "Santa Marta en grupo",
+      "destination": "Santa Marta, Colombia",
+      "nights": 5,
+      "description": "Alojamiento compartido cerca de la playa para grupos grandes.",
+      "price_per_person_usd": "294",
+      "max_people": 10,
+      "vector": {
+        "lujo": 0.0,
+        "economico": 1.0,
+        "grupo": 1.0,
+        "aventura": 0.1,
+        "playa": 0.8
+      },
+      "hotel": "Hostal Brisa del Caribe",
+      "airport": "SMR",
+      "day_offset": 14
+    },
+    {
+      "id": "eje_cafetero_grupo",
+      "name": "Eje Cafetero en grupo",
+      "destination": "Eje Cafetero, Colombia",
+      "nights": 4,
+      "description": "Hospedaje sencillo en una finca rodeada de cafetales.",
+      "price_per_person_usd": "252",
+      "max_people": 12,
+      "vector": {
+        "lujo": 0.0,
+        "economico": 1.0,
+        "grupo": 1.0,
+        "aventura": 0.3,
+        "playa": 0.0
+      },
+      "hotel": "Finca Entre Cafetales",
+      "airport": "PEI",
+      "day_offset": 21
+    },
+    {
+      "id": "san_gil_aventura",
+      "name": "Aventura en San Gil",
+      "destination": "San Gil, Colombia",
+      "nights": 4,
+      "description": "Hospedaje cómodo sin lujos, cerca de rutas de senderismo y aventura.",
+      "price_per_person_usd": "510",
+      "max_people": 4,
+      "vector": {
+        "lujo": 0.0,
+        "economico": 0.5,
+        "grupo": 0.1,
+        "aventura": 1.0,
+        "playa": 0.0
+      },
+      "hotel": "Posada Río y Montaña",
+      "airport": "BGA",
+      "day_offset": 28
+    },
+    {
+      "id": "tayrona_naturaleza",
+      "name": "Naturaleza en Tayrona",
+      "destination": "Parque Tayrona, Colombia",
+      "nights": 4,
+      "description": "Hospedaje ecológico para explorar las playas y senderos del Tayrona.",
+      "price_per_person_usd": "588",
+      "max_people": 4,
+      "vector": {
+        "lujo": 0.0,
+        "economico": 0.4,
+        "grupo": 0.0,
+        "aventura": 0.9,
+        "playa": 0.8
+      },
+      "hotel": "Ecohotel Senderos del Tayrona",
+      "airport": "SMR",
+      "day_offset": 35
+    }
+  ],
+  "flights": [
+    {
+      "id": "cartagena_premium_outbound",
+      "origin": "MDE",
+      "destination": "CTG",
+      "airline": "Aerolínea Demo",
+      "flight_number": "DM100",
+      "cabin": "Ejecutiva",
+      "day_offset": 0,
+      "departure_time": "09:00",
+      "duration_minutes": 75,
+      "price_per_person_usd": "480",
+      "available_seats": 4,
+      "vector": {
+        "lujo": 1.0,
+        "economico": 0.0,
+        "grupo": 0.0,
+        "aventura": 0.0,
+        "playa": 0.8
+      }
+    },
+    {
+      "id": "cartagena_premium_return",
+      "origin": "CTG",
+      "destination": "MDE",
+      "airline": "Aerolínea Demo",
+      "flight_number": "DM101",
+      "cabin": "Ejecutiva",
+      "day_offset": 4,
+      "departure_time": "17:00",
+      "duration_minutes": 75,
+      "price_per_person_usd": "480",
+      "available_seats": 4,
+      "vector": {
+        "lujo": 1.0,
+        "economico": 0.0,
+        "grupo": 0.0,
+        "aventura": 0.0,
+        "playa": 0.8
+      }
+    },
+    {
+      "id": "bogota_gourmet_outbound",
+      "origin": "MDE",
+      "destination": "BOG",
+      "airline": "Aerolínea Demo",
+      "flight_number": "DM102",
+      "cabin": "Ejecutiva",
+      "day_offset": 7,
+      "departure_time": "09:00",
+      "duration_minutes": 75,
+      "price_per_person_usd": "360",
+      "available_seats": 4,
+      "vector": {
+        "lujo": 1.0,
+        "economico": 0.0,
+        "grupo": 0.0,
+        "aventura": 0.1,
+        "playa": 0.0
+      }
+    },
+    {
+      "id": "bogota_gourmet_return",
+      "origin": "BOG",
+      "destination": "MDE",
+      "airline": "Aerolínea Demo",
+      "flight_number": "DM103",
+      "cabin": "Ejecutiva",
+      "day_offset": 10,
+      "departure_time": "17:00",
+      "duration_minutes": 75,
+      "price_per_person_usd": "360",
+      "available_seats": 4,
+      "vector": {
+        "lujo": 1.0,
+        "economico": 0.0,
+        "grupo": 0.0,
+        "aventura": 0.1,
+        "playa": 0.0
+      }
+    },
+    {
+      "id": "santa_marta_grupo_outbound",
+      "origin": "MDE",
+      "destination": "SMR",
+      "airline": "Aerolínea Demo",
+      "flight_number": "DM104",
+      "cabin": "Económica",
+      "day_offset": 14,
+      "departure_time": "09:00",
+      "duration_minutes": 75,
+      "price_per_person_usd": "98",
+      "available_seats": 10,
+      "vector": {
+        "lujo": 0.0,
+        "economico": 1.0,
+        "grupo": 1.0,
+        "aventura": 0.1,
+        "playa": 0.8
+      }
+    },
+    {
+      "id": "santa_marta_grupo_return",
+      "origin": "SMR",
+      "destination": "MDE",
+      "airline": "Aerolínea Demo",
+      "flight_number": "DM105",
+      "cabin": "Económica",
+      "day_offset": 19,
+      "departure_time": "17:00",
+      "duration_minutes": 75,
+      "price_per_person_usd": "98",
+      "available_seats": 10,
+      "vector": {
+        "lujo": 0.0,
+        "economico": 1.0,
+        "grupo": 1.0,
+        "aventura": 0.1,
+        "playa": 0.8
+      }
+    },
+    {
+      "id": "eje_cafetero_grupo_outbound",
+      "origin": "MDE",
+      "destination": "PEI",
+      "airline": "Aerolínea Demo",
+      "flight_number": "DM106",
+      "cabin": "Económica",
+      "day_offset": 21,
+      "departure_time": "09:00",
+      "duration_minutes": 75,
+      "price_per_person_usd": "84",
+      "available_seats": 12,
+      "vector": {
+        "lujo": 0.0,
+        "economico": 1.0,
+        "grupo": 1.0,
+        "aventura": 0.3,
+        "playa": 0.0
+      }
+    },
+    {
+      "id": "eje_cafetero_grupo_return",
+      "origin": "PEI",
+      "destination": "MDE",
+      "airline": "Aerolínea Demo",
+      "flight_number": "DM107",
+      "cabin": "Económica",
+      "day_offset": 25,
+      "departure_time": "17:00",
+      "duration_minutes": 75,
+      "price_per_person_usd": "84",
+      "available_seats": 12,
+      "vector": {
+        "lujo": 0.0,
+        "economico": 1.0,
+        "grupo": 1.0,
+        "aventura": 0.3,
+        "playa": 0.0
+      }
+    },
+    {
+      "id": "san_gil_aventura_outbound",
+      "origin": "MDE",
+      "destination": "BGA",
+      "airline": "Aerolínea Demo",
+      "flight_number": "DM108",
+      "cabin": "Económica",
+      "day_offset": 28,
+      "departure_time": "09:00",
+      "duration_minutes": 75,
+      "price_per_person_usd": "170",
+      "available_seats": 4,
+      "vector": {
+        "lujo": 0.0,
+        "economico": 0.5,
+        "grupo": 0.1,
+        "aventura": 1.0,
+        "playa": 0.0
+      }
+    },
+    {
+      "id": "san_gil_aventura_return",
+      "origin": "BGA",
+      "destination": "MDE",
+      "airline": "Aerolínea Demo",
+      "flight_number": "DM109",
+      "cabin": "Económica",
+      "day_offset": 32,
+      "departure_time": "17:00",
+      "duration_minutes": 75,
+      "price_per_person_usd": "170",
+      "available_seats": 4,
+      "vector": {
+        "lujo": 0.0,
+        "economico": 0.5,
+        "grupo": 0.1,
+        "aventura": 1.0,
+        "playa": 0.0
+      }
+    },
+    {
+      "id": "tayrona_naturaleza_outbound",
+      "origin": "MDE",
+      "destination": "SMR",
+      "airline": "Aerolínea Demo",
+      "flight_number": "DM110",
+      "cabin": "Económica",
+      "day_offset": 35,
+      "departure_time": "09:00",
+      "duration_minutes": 75,
+      "price_per_person_usd": "196",
+      "available_seats": 4,
+      "vector": {
+        "lujo": 0.0,
+        "economico": 0.4,
+        "grupo": 0.0,
+        "aventura": 0.9,
+        "playa": 0.8
+      }
+    },
+    {
+      "id": "tayrona_naturaleza_return",
+      "origin": "SMR",
+      "destination": "MDE",
+      "airline": "Aerolínea Demo",
+      "flight_number": "DM111",
+      "cabin": "Económica",
+      "day_offset": 39,
+      "departure_time": "17:00",
+      "duration_minutes": 75,
+      "price_per_person_usd": "196",
+      "available_seats": 4,
+      "vector": {
+        "lujo": 0.0,
+        "economico": 0.4,
+        "grupo": 0.0,
+        "aventura": 0.9,
+        "playa": 0.8
+      }
+    }
+  ]
+}

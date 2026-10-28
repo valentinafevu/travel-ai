@@ -1,0 +1,103 @@
+venv/
+__pycache__/
+*.py[cod]
+*.sqlite3
+.env
+output/playwright/
+.playwright-cli/
+# ===== Secretos y configuración local (¡lo más importante en un repo público!) =====
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets.json
+credentials.json
+service-account*.json
+
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Entornos virtuales
+.venv/
+venv/
+env/
+ENV/
+
+# Empaquetado y builds
+build/
+dist/
+*.egg-info/
+.eggs/
+wheels/
+pip-wheel-metadata/
+
+# Testing y cobertura
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+
+# Type checkers y linters
+.mypy_cache/
+.ruff_cache/
+.pyre/
+.pytype/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# ===== TypeScript / Node =====
+node_modules/
+*.tsbuildinfo
+.npm/
+.eslintcache
+.yarn/*
+!.yarn/patches
+!.yarn/releases
+.pnp.*
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Builds de frameworks
+.next/
+out/
+.nuxt/
+.turbo/
+.vite/
+.cache/
+coverage/
+
+# ===== ML / datos (GitHub rechaza archivos > 100 MB) =====
+data/raw/
+datasets/
+*.ckpt
+*.pt
+*.pth
+*.safetensors
+*.onnx
+*.h5
+*.bin
+wandb/
+mlruns/
+lightning_logs/
+
+# ===== Editores y sistema operativo =====
+.vscode/
+!.vscode/settings.json
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+
+# ===== Logs =====
+*.log
+logs/
